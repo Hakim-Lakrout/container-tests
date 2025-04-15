@@ -1,0 +1,32 @@
+schemaVersion: '2.0.0'
+
+fileExistenceTests:
+  - name: "App.py is present"
+    path: "/app/app.py"
+    shouldExist: true
+  - name: "requirements.txt is present"
+    path: "/app/requirements.txt"
+    shouldExist: true
+  - name: "data.txt is present"
+    path: "/app/data.txt"
+    shouldExist: true
+
+fileContentTests:
+  - name: 'Mandatory extension in requirement'
+    path: '/app/requirements.txt'
+    expectedContents: ['flask']
+
+commandTests:
+  - name: "Check Flask is installed"
+    command: "pip"
+    args: ["list"]
+    expectedOutput: ["Flask"]
+    exitCode: 0
+
+metadataTest:
+  envVars:
+    - key: TEST
+      value: test
+  cmd: ["python", "app.py"]
+  workdir: "/app"
+  user: "python"
