@@ -6,7 +6,7 @@ WORKDIR /app
 #Afiner cette ligne et jouer avec ce qui est copié pour faire echouer les tests
 COPY --chown=python:python app.py .
 COPY --chown=python:python requirements.txt .
-COPY --chown=python:python data.txt . 
+COPY --chown=python:python data.html . 
 
 RUN pip install --no-cache-dir -r requirements.txt
 ENV NAME=chti_tremplin_app

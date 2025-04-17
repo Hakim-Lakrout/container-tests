@@ -7,9 +7,10 @@ fileExistenceTests:
   - name: "requirements.txt is present"
     path: "/app/requirements.txt"
     shouldExist: true
-  - name: "data.txt is present"
-    path: "/app/data.txt"
+  - name: "data.txt is present and readable by its user"
+    path: "/app/data.html"
     shouldExist: true
+    permissions: '-rw-rw-r--'
 
 fileContentTests:
   - name: 'Mandatory extension in requirement'
@@ -22,7 +23,6 @@ commandTests:
     args: ["list"]
     expectedOutput: ["Flask"]
     exitCode: 0
-
 metadataTest:
   envVars:
     - key: TEST

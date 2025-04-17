@@ -6,4 +6,5 @@
 
 ## What
 
+- L'intro je l'ai dans mon telephone dans note.
 - Exemple concrêt de comment on fait actuellement pour tester nos Dockerfile et quelle scénario qui peu nous arriver.
