@@ -19,7 +19,7 @@ fileExistenceTests:
     permissions: '-r------'
     uid: 1000
     gid: 1000
-    
+
 fileContentTests:
   - name: 'Mandatory lib in requirement'
     path: '/app/requirements.txt'
@@ -33,9 +33,9 @@ commandTests:
     exitCode: 0
 
 metadataTest:
+  workdir: "/app"
   envVars:
     - key: TEST
       value: "Qui suis je"
   cmd: ["python3", "app.py"]
-  workdir: "/app"
   user: "python"
