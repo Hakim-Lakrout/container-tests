@@ -10,10 +10,10 @@ fileExistenceTests:
   - name: "data.txt is present and readable by its user"
     path: "/app/data.html"
     shouldExist: true
-    permissions: '-rw-rw-r--'
-
+    permissions: '-r-r-r--'
+    
 fileContentTests:
-  - name: 'Mandatory extension in requirement'
+  - name: 'Mandatory lib in requirement'
     path: '/app/requirements.txt'
     expectedContents: ['flask']
 
@@ -23,10 +23,11 @@ commandTests:
     args: ["list"]
     expectedOutput: ["Flask"]
     exitCode: 0
+
 metadataTest:
   envVars:
     - key: TEST
-      value: test
-  cmd: ["python", "app.py"]
+      value: "Qui suis je"
+  cmd: ["python3", "app.py"]
   workdir: "/app"
   user: "python"

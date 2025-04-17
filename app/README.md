@@ -14,3 +14,6 @@ configuration bats:
 export BATS_LIB_PATH=~/tests/test/test_helper
 bats tests/test.bats.sh
 ```
+
+Comment puis je présenter les tests bats apres container structure test. ?? 
+:: Parler des commande bash et c'est quoi l'interet de bats deja par rapport à CST.
