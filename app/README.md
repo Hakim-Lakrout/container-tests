@@ -18,5 +18,5 @@ bats tests/test.bats.sh
 Comment puis je présenter les tests bats apres container structure test. ?? 
 :: Parler des commande bash et c'est quoi l'interet de bats deja par rapport à CST.
 
-- Demain faire la la premiere répitition du talk en péparant tous les script qui vont avec la démo et préparer le repo github.avec les differnts commit pour faire du TDD.
+- Demain faire la la premiere répitition du talk en péparant tous les script qui vont avec la démo et préparer le repo github. Avec les differnts commit pour faire du TDD.
 - 
