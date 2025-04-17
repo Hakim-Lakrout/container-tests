@@ -4,13 +4,21 @@ fileExistenceTests:
   - name: "App.py is present"
     path: "/app/app.py"
     shouldExist: true
+    uid: 1000
+    gid: 1000
+
   - name: "requirements.txt is present"
     path: "/app/requirements.txt"
     shouldExist: true
+    uid: 1000
+    gid: 1000
+
   - name: "data.txt is present and readable by its user"
     path: "/app/data.html"
     shouldExist: true
-    permissions: '-r-r-r--'
+    permissions: '-r------'
+    uid: 1000
+    gid: 1000
     
 fileContentTests:
   - name: 'Mandatory lib in requirement'
