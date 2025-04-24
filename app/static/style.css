@@ -7,7 +7,7 @@ body {
   padding: 2rem;
   line-height: 1.6;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +42,14 @@ h1 {
   color: #2c3e50;
 }
 
+h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
 p {
   font-size: 1.1rem;
   color: #555555;
@@ -65,4 +73,41 @@ p {
 
 .btn:hover {
   background-color: #2980b9;
+}
+
+/* Nouveau style pour les sections */
+
+section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+ul li {
+  margin: 0.8rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+.remerciements p {
+  font-style: italic;
+  color: #666;
 }
