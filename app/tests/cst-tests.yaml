@@ -1,0 +1,8 @@
+schemaVersion: '2.0.0'
+metadataTest:
+  workdir: "/app"
+  envVars:
+    - key: APP_NAME
+      value: "chti tremplin"
+  cmd: ["python3", "app.py"]
+  user: "python"
