@@ -1,4 +1,24 @@
 schemaVersion: '2.0.0'
+fileExistenceTests:
+  - name: "App.py is present"
+    path: "/app/app.py"
+    shouldExist: true
+    uid: 1000
+    gid: 1000
+
+  - name: "Requirements.txt is present"
+    path: "/app/requirements.txt"
+    shouldExist: true
+    uid: 1000
+    gid: 1000
+  
+  - name: "Statics can be rendered"
+    path: "/app/static"
+    shouldExist: true
+    uid: 1000
+    gid: 1000
+    permissions: 'dr-xr-xr-x'
+   
 metadataTest:
   workdir: "/app"
   envVars:
