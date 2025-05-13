@@ -8,6 +8,9 @@ all: build test
 build:
 	docker build -t $(IMAGE_NAME) .
 
+run: build
+	docker run --name python_app -ti -p  5001:5000  --rm tremplin-image:latest
+
 cst-test:
 	container-structure-test test --image $(IMAGE_NAME):latest --config tests/cst-tests.yaml
 

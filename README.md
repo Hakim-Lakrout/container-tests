@@ -1,4 +1,4 @@
-# Tester vos conteneurs `Docker`, plus qu'un choix, une nécessité
+# Tester vos conteneurs `Docker`, plus qu'un choix, une nécessité 
 
 Ce dépôt contient l'application de démonstration que j'utilise pour présenter des outils permettant de tester des images Docker.
 
