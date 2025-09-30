@@ -3,6 +3,6 @@ metadataTest:
   workdir: "/app"
   envVars:
     - key: APP_NAME
-      value: "chti tremplin"
+      value: "cloud nord"
   cmd: ["python3", "app.py"]
   user: "python"
