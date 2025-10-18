@@ -20,6 +20,18 @@ fileExistenceTests:
     gid: 1000
     permissions: 'dr-xr-xr-x'
 
+fileContentTests:
+  - name: "Mandatory lib in requirements file"
+    path: "/app/requirements.txt"
+    expectedContents: ['flask']
+    
+commandTests:
+  - name: "Check Flask is installed"
+    command: "pip"
+    args: ["list"]
+    expectedOutput: ["Flask"]
+    exitCode: 0
+    
 metadataTest:
   workdir: "/app"
   envVars:
