@@ -21,6 +21,53 @@
   <section class="remerciements">
     <h2>Remerciements</h2>
     <p>Merci pour votre écoute</p>
+
+    <div class="images-wrapper">
+      <div>
+        <img src="/static/feedback.png" alt="Feedback" class="feedback-img">
+        <p class="caption">Feedback</p>
+      </div>
+      <div>
+        <img src="/static/ressources.png" alt="Ressources QR" class="feedback-img">
+        <p class="caption">Ressources</p>
+      </div>
+    </div>
   </section>
+
+  <style>
+    .images-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .feedback-img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .feedback-img:hover {
+      transform: scale(1.05);
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #666;
+      font-style: italic;
+    }
+    .images-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4rem;
+      margin-top: 1.5rem;
+    }
+  </style>
 </body>
 </html>
